@@ -1,0 +1,156 @@
+body {
+  font-family: "Lexend", sans-serif;
+  font-family: "Righteous", cursive;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --dark-light: #19283f;
+  --white: white;
+  --gold: #ffe600;
+}
+header {
+  margin-top: -20px;
+}
+header,
+.landing .card,
+.howWeDo {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--white);
+}
+header img {
+  width: 100px;
+}
+header ul li {
+  cursor: pointer;
+}
+header ul li:hover {
+  color: var(--gold);
+}
+.landing {
+  background-image: url("https://ivkovic.me/themes/smak/img/slider.jpg");
+  height: 100vh;
+}
+button {
+  background-color: var(--gold) !important;
+}
+.landing .down {
+  background-color: var(--gold);
+  color: var(--white);
+  cursor: pointer;
+}
+.our-services span,
+.our-references span,
+.about-us span {
+  display: inline-block;
+  background-color: var(--gold);
+  width: 12%;
+  height: 2px;
+  border-radius: 10px;
+}
+.cards .item .circle {
+  background-color: var(--gold);
+  color: white;
+  margin: auto;
+}
+.howWeDo {
+  background-image: url("https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80");
+}
+.n-links li:hover {
+  color: var(--gold);
+  cursor: pointer;
+}
+.our-references .items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.our-references .items .item img {
+  max-width: 100%;
+}
+.scores {
+  background-image: url("https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80");
+}
+
+.skills {
+  background-image: url("https://media.wired.co.uk/photos/606da0d37aff197af7c72d46/4:3/w_1704,h_1278,c_limit/bosjes-_001-copy.jpg");
+}
+.scores::before,
+.skills::before,
+.footer::before,
+.howWeDo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.8;
+}
+.footer {
+  background-image: url("https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGFyY2hpdGVjdHVyZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80");
+}
+.footer,
+.scores,
+.skills,
+.howWeDo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+#linksmobile {
+  padding: 8px;
+  display: grid;
+  justify-content: center !important;
+  align-items: center !important;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+  z-index: 111;
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  top: 12.3%;
+}
+@media (min-width: 1000px) {
+  #menuBars {
+    display: none !important;
+  }
+}
+@media (max-width: 1000px) {
+  .cards {
+    display: grid !important;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(0.5fr, 1fr)) !important;
+  }
+  .cards .item {
+    margin-top: 30px;
+  }
+  .hcard {
+    width: 50% !important;
+    text-align: center !important;
+  }
+  .about-us .items .item .innerItem {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .about-us .items .item .innerItem .text {
+    align-items: center !important;
+    width: 300px;
+    text-align: center !important;
+  }
+  .footer form,
+  .footer form div {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  header #links {
+    display: none !important;
+  }
+  #menuBars {
+    display: block;
+    position: absolute;
+    right: 10%;
+    font-size: 2rem;
+    color: var(--gold);
+    cursor: pointer;
+  }
+}
